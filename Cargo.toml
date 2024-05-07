@@ -1,0 +1,17 @@
+[package]
+name = "myrust_person"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "myrust_person"
+crate-type = ["cdylib"]
+
+#[dependencies]
+#lib = {path = "src/lib.rs"}
+
+[dependencies.pyo3]
+version = "0.20.0"
+features = ["extension-module"]
